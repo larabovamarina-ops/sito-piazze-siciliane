@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piazze Siciliane</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HOME PAGE
+============================================================ -->
+<div id="home-page" class="page active">
+  <div class="card">
+
+    <!-- Hero con schizzo acquerello -->
+    <div class="home-hero">
+      <img
+        src="Immagini/trasferimento (15).jpg"
+        alt="Piazze siciliane – skyline"
+      />
+      <div class="home-hero-title">Piazze siciliane</div>
+    </div>
+
+    <!-- Barra cerca -->
+    <div class="home-search">
+      <input type="text" placeholder="Cerca" />
+      <span class="search-icon">&#128269;</span>
+    </div>
+
+    <!-- Lista piazze -->
+    <div class="piazza-list">
+
+      <!-- 1. Palermo -->
+      <div class="piazza-item" onclick="showPage('palermo')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza palermo.png"
+          alt="Piazza Pretoria Palermo"
+        />
+        <div class="piazza-label">
+          <span>Piazza Pretoria</span>
+          <span>(Palermo)</span>
+        </div>
+      </div>
+
+      <!-- 2. Trapani (nessuna pagina interna, rimane in home) -->
+      <div class="piazza-item" onclick="showPage('home')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza trapani.png"
+          alt="Piazza Vittorio Emanuele Trapani"
+        />
+        <div class="piazza-label">
+          <span>Piazza Vittorio Emanuele</span>
+          <span>(Trapani)</span>
+        </div>
+      </div>
+
+      <!-- 3. Agrigento -->
+      <div class="piazza-item" onclick="showPage('agrigento')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza agrigento.png"
+          alt="Piazza Pirandello Agrigento"
+        />
+        <div class="piazza-label">
+          <span>Piazza Pirandello</span>
+          <span>(Agrigento)</span>
+        </div>
+      </div>
+
+      <!-- 4. Caltanissetta (nessuna pagina interna) -->
+      <div class="piazza-item" onclick="showPage('home')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza caltanissetta.png"
+          alt="Piazza Garibaldi Caltanissetta"
+        />
+        <div class="piazza-label">
+          <span>Piazza Garibaldi</span>
+          <span>(Caltanissetta)</span>
+        </div>
+      </div>
+
+      <!-- 5. Enna (nessuna pagina interna) -->
+      <div class="piazza-item" onclick="showPage('home')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza enna.png"
+          alt="Piazza Vittorio Emanuele Enna"
+        />
+        <div class="piazza-label">
+          <span>Piazza Vittorio Emanuele</span>
+          <span>(Enna)</span>
+        </div>
+      </div>
+
+      <!-- 6. Ragusa (nessuna pagina interna) -->
+      <div class="piazza-item" onclick="showPage('home')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza ragusa.png"
+          alt="Piazza Duomo Ragusa"
+        />
+        <div class="piazza-label">
+          <span>Piazza Duomo</span>
+          <span>(Ragusa)</span>
+        </div>
+      </div>
+
+      <!-- 7. Siracusa -->
+      <div class="piazza-item" onclick="showPage('siracusa')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza siracusa.png"
+          alt="Piazza Duomo Siracusa"
+        />
+        <div class="piazza-label">
+          <span>Piazza Duomo</span>
+          <span>(Siracusa)</span>
+        </div>
+      </div>
+
+      <!-- 8. Catania -->
+      <div class="piazza-item" onclick="showPage('catania')">
+        <img
+          class="piazza-thumb"
+          src="Immagini/piazza catania.png"
+          alt="Piazza Duomo Catania"
+        />
+        <div class="piazza-label">
+          <span>Piazza Duomo</span>
+          <span>(Catania)</span>
+        </div>
+      </div>
+
+    </div><!-- /piazza-list -->
+  </div><!-- /card -->
+</div><!-- /home-page -->
+
+
+<!-- ============================================================
+     PALERMO — Piazza Pretoria
+============================================================ -->
+<div id="palermo-page" class="page">
+  <div class="card">
+
+    <div class="hero">
+      <img
+        src="Immagini/piazza palermo.png"
+        alt="Piazza Pretoria Palermo"
+      />
+      <div class="hero-title">Piazza Pretoria</div>
+    </div>
+
+    <div class="nav-bar">
+      <span class="nav-home" onclick="showPage('home')">Home</span>
+    </div>
+
+    <div class="card-body">
+      <p>
+        <span class="t-pink">Piazza Pretoria</span>, nota anche come
+        <span class="t-pink-u">"Piazza della Vergogna"</span>, è una delle
+        piazze più monumentali di Palermo, situata nel cuore del centro
+        storico, vicino ai Quattro Canti. Ospita la scenografica Fontana
+        Pretoria del XVI secolo, caratterizzata da statue nude che diedero
+        origine al soprannome, e Palazzo Pretorio, sede del Comune.
+      </p>
+      <p>
+        La "Fontana Pretoria" costruita nel 1500 a Firenze e poi acquistata
+        dal Senato di Palermo nel 1573, è un capolavoro manierista con statue
+        di divinità mitologiche, mostri e ninfe.
+      </p>
+      <p>
+        Il soprannome deriva principalmente dalla nudità delle statue,
+        considerate scandalose nel XVI secolo, specialmente vicino al
+        monastero di clausura di Santa Caterina. Un'altra leggenda cita le
+        spese folli del Senato per l'acquisto. Oltre alla fontana, la piazza
+        è circondata da palazzo Pretorio (Palazzo delle Aquile), la chiesa di
+        Santa Caterina d'Alessandria, Palazzo Bonocore e Palazzo Bordonaro.
+      </p>
+      <p>
+        Si trova tra via Maqueda e via Vittorio Emanuele (il Cassaro),
+        facilmente raggiungibile a piedi nel centro storico.
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <span class="nav-next-label" onclick="showPage('agrigento')">
+        Piazza successiva &nbsp;&#8594;
+      </span>
+    </div>
+
+  </div>
+</div><!-- /palermo-page -->
+
+
+<!-- ============================================================
+     AGRIGENTO — Piazza Pirandello
+============================================================ -->
+<div id="agrigento-page" class="page">
+  <div class="card">
+
+    <div class="hero">
+      <img
+        src="Immagini/piazza agrigento.png"
+        alt="Piazza Pirandello Agrigento"
+      />
+      <div class="hero-title">Piazza Pirandello</div>
+    </div>
+
+    <div class="nav-bar">
+      <span class="nav-home" onclick="showPage('home')">Home</span>
+    </div>
+
+    <div class="card-body">
+      <p>
+        <span class="t-pink">Piazza Pirandello</span>, è il cuore civile e
+        culturale del centro storico di Agrigento. Situata alla fine della
+        centralissima via Atenea, la piazza funge da elegante "salotto"
+        cittadino e ospita i principali edifici istituzionali della città.
+      </p>
+      <p>
+        Il Palazzo dei Giganti (Municipio), edificato nel 1627 come residenza
+        della famiglia Tomasi di Lampedusa, divenne poi un convento domenicano
+        e, dal 1867, è la sede del Comune. Dal suo nome derivano le due
+        imponenti statue (i "Giganti") rinvenute nel Tempio di Zeus Olimpio.
+      </p>
+      <p>
+        Il Teatro Luigi Pirandello, inaugurato nel 1881 come
+        <span class="t-pink-u">"Regina Margherita"</span>, è un gioiello
+        ottocentesco situato all'interno del complesso del Palazzo Municipale.
+        Ridenominato in onore del drammaturgo nel 1946, ospita ancora oggi
+        stagioni teatrali di rilievo.
+      </p>
+      <p>
+        Adiacente al Municipio, la chiesa di San Domenico del XVII secolo
+        presenta una pregevole facciata barocca in arenaria e un portale
+        decorato con un medaglione della Madonna del Rosario.
+      </p>
+      <p>
+        Una statua bronzea, monumento a Luigi Pirandello, che raffigura il
+        premio Nobel con un libro aperto, simbolo della sua eredità letteraria.
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <button class="arrow-btn" onclick="showPage('palermo')">&#8592;</button>
+      <span class="spacer"></span>
+      <button class="arrow-btn" onclick="showPage('siracusa')">&#8594;</button>
+    </div>
+
+  </div>
+</div><!-- /agrigento-page -->
+
+
+<!-- ============================================================
+     SIRACUSA — Piazza Duomo (1ª pagina)
+============================================================ -->
+<div id="siracusa-page" class="page">
+  <div class="card">
+
+    <div class="hero">
+      <img
+        src="Immagini/piazza siracusa.png"
+        alt="Piazza Duomo Siracusa"
+      />
+      <div class="hero-title">Piazza Duomo</div>
+    </div>
+
+    <div class="nav-bar">
+      <span class="nav-home" onclick="showPage('home')">Home</span>
+    </div>
+
+    <div class="card-body">
+      <p>
+        <span class="t-pink">Piazza Duomo</span> a Siracusa è considerata una
+        delle piazze più spettacolari d'Italia, situata nel punto più elevato
+        dell'isola di Ortigia. È il simbolo della rinascita barocca della
+        città dopo il terremoto del 1693, caratterizzata da una caratteristica
+        forma "a occhio" e pavimentata in pietra bianca che esalta la luce
+        naturale.
+      </p>
+      <p>
+        La Cattedrale della Natività di Maria Santissima, un capolavoro di
+        continuità storica che incorpora le colonne doriche dell'antico Tempio
+        di Atena (V sec. a.C.). La facciata settecentesca è uno degli esempi
+        più alti del barocco siciliano.
+      </p>
+      <p>
+        Il Palazzo Vermexio (Palazzo del Senato), sede del Municipio,
+        costruito tra il 1629 e il 1633. Nei suoi sotterranei sono visibili i
+        resti di un tempio ionico dedicato ad Artemide.
+      </p>
+      <p>
+        La Chiesa di Santa Lucia alla Badia, situata all'estremità meridionale
+        della piazza, è celebre per la sua facciata barocca.
+      </p>
+      <p>
+        L'Ipogeo di Piazza Duomo, è un percorso sotterraneo che attraversa
+        cisterne antiche e fu usato come rifugio antiaereo durante la Seconda
+        Guerra Mondiale.
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <button class="arrow-btn" onclick="showPage('agrigento')">&#8592;</button>
+      <span class="spacer"></span>
+      <button class="arrow-btn" onclick="showPage('catania')">&#8594;</button>
+    </div>
+
+  </div>
+</div><!-- /siracusa-page -->
+
+
+<!-- ============================================================
+     CATANIA — Piazza Duomo (2ª pagina)
+============================================================ -->
+<div id="catania-page" class="page">
+  <div class="card">
+
+    <div class="hero">
+      <img
+        src="Immagini/piazza catania.png"
+        alt="Piazza Duomo Catania"
+      />
+      <div class="hero-title">Piazza Duomo</div>
+    </div>
+
+    <div class="nav-bar">
+      <span class="nav-home" onclick="showPage('home')">Home</span>
+    </div>
+
+    <div class="card-body">
+      <p>
+        <span class="t-pink">Piazza Duomo</span> è il cuore pulsante di
+        Catania, un capolavoro di architettura barocca siciliana (patrimonio
+        UNESCO) nato dalla ricostruzione dopo il terremoto del 1693. È il
+        punto in cui convergono le tre strade principali della città: via
+        Etnea, via Vittorio Emanuele e via Garibaldi.
+      </p>
+      <p>
+        La fontana dell'Elefante (u Liotru), situata al centro della piazza,
+        è il simbolo della città. L'elefante in pietra lavica di epoca romana
+        sorregge un obelisco egizio. La leggenda vuole che il nome derivi dal
+        mago Eliodoro, che si diceva cavalcasse l'elefante.
+      </p>
+      <p>
+        La Cattedrale di Sant'Agata, l'imponente chiesa dedicata alla patrona,
+        ricostruita dall'architetto Vaccarini. Al suo interno si trovano le
+        reliquie della Santa e la tomba del compositore Vincenzo Bellini.
+      </p>
+      <p>
+        La fontana dell'Amenano, posta sul lato sud-ovest, l'acqua "a
+        lenzuolo" cade nel fiume sotterraneo omonimo. È il punto d'ingresso
+        alla storica Pescheria, il vivace mercato del pesce.
+      </p>
+      <p>
+        Il Palazzo degli Elefanti (Municipio) e Palazzo dei Chierici, eleganti
+        edifici barocchi che completano il perimetro della piazza.
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <button class="arrow-btn" onclick="showPage('siracusa')">&#8592;</button>
+      <span class="spacer"></span>
+    </div>
+
+  </div>
+</div><!-- /catania-page -->
+
+
+<!-- ============================================================
+     JAVASCRIPT — navigazione tra pagine
+============================================================ -->
+<script>
+  /**
+   * showPage(name)
+   * Nasconde tutte le pagine, mostra quella richiesta.
+   * @param {string} name  'home' | 'palermo' | 'agrigento' | 'siracusa' | 'catania'
+   */
+  function showPage(name) {
+    // Nascondi tutte le pagine
+    var pages = document.querySelectorAll('.page');
+    for (var i = 0; i < pages.length; i++) {
+      pages[i].classList.remove('active');
+    }
+
+    // Mostra la pagina target
+    var target = document.getElementById(name + '-page');
+    if (target) {
+      target.classList.add('active');
+      // Scroll in cima
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+</script>
+
+</body>
+</html>
